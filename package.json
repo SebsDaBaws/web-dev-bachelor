@@ -1,0 +1,36 @@
+{
+  "name": "my-qwik-basic-starter",
+  "description": "App with Routing built-in (recommended)",
+  "engines": {
+    "node": ">=15.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.types": "tsc --incremental --noEmit",
+    "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "preview": "qwik build preview && vite preview --open",
+    "start": "cross-env LAUNCH_EDITOR=code vite --open --mode ssr",
+    "qwik": "qwik"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "0.24.0",
+    "@builder.io/qwik-city": "~0.7.0",
+    "@types/node": "^18.15.3",
+    "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.21",
+    "prettier": "2.8.6",
+    "tailwindcss": "^3.2.7",
+    "typescript": "5.0.2",
+    "undici": "5.21.0",
+    "vite": "4.2.1",
+    "vite-tsconfig-paths": "3.5.0"
+  }
+}
