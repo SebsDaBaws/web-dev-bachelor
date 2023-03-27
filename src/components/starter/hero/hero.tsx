@@ -70,7 +70,7 @@ export default component$(() => {
         Time to celebrate 🎉
       </button>
       <br></br>
-      <div class="text-red-500">hello there</div>
+      <div class="text-blue-800">hello there</div>
     </div>
   );
 });
