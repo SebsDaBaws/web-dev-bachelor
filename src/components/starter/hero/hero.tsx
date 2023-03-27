@@ -3,17 +3,8 @@ import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
   return (
-    <div class="
-    color: yellow;
-    display: flex;
-    vertical-align: middle;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: 200px;
-    justify-content: center;
-    gap: 30px">
-      <h1>Jyllands-Posten</h1>
+    <div class="">
+       <h1 class="content-center flex-auto text-primary">Jyllands-Posten</h1>
       <button
         onClick$={async () => {
           const defaults = {
@@ -70,7 +61,7 @@ export default component$(() => {
         Time to celebrate 🎉
       </button>
       <br></br>
-      <div class="text-blue-800">hello there</div>
+      <div class="text-red-600">hello there</div>
     </div>
   );
 });
