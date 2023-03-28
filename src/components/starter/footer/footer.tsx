@@ -7,11 +7,12 @@ export default component$(() => {
 
   return (
     <footer>
-      <a href="" target="_blank" class={styles.anchor}>
+      <a class="inline-block text-primary" href="" target="_blank">
         Jyllands-Posten
         <span class={styles.spacer}>|</span>
-        <span>{serverTime.value.date}</span>
       </a>
+      <span>{new Date().toLocaleString()}</span>
     </footer>
   );
+  
 });

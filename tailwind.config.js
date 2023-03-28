@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -11,6 +8,9 @@ module.exports = {
         "primary-hover": "#003830",
         secondary: "#248a88",
       },
+    },
+    fontFamily: {
+      merriweather: ["Merriweather", "serif"],
     },
     aspectRatio: {
       square: "1 / 1",
@@ -22,6 +22,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-
-
