@@ -6,7 +6,7 @@ export default component$(() => {
   return (
     <header class={styles.header}>
       <div class={styles.logo}>
-        <a class= "content-center" href="/" title="qwik">
+        <a class= "content-center" href="/" title="JPLogo">
           <JPLogo />
         </a>
       </div>
