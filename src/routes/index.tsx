@@ -13,16 +13,16 @@ export default component$(() => {
 
       <div class="section bright">
         <div class="container center">
-          <Starter />
+          {/*<Starter />*/} 
         </div>
       </div>
 
       <div class="section">
         <div class="container center">
           <h3>
-            You can <b>count</b> on me
+            {/*You can <b>count</b> on me*/}
           </h3>
-          <Counter />
+         {/* <Counter />*/}
         </div>
       </div>
 

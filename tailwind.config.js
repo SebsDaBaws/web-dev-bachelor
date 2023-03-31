@@ -10,7 +10,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      merriweather: ["Merriweather", "serif"],
+      serif: ["Merriweather", "serif"],
+      "sans-serif": ["Roboto", "sans-serif"],
+
     },
     aspectRatio: {
       square: "1 / 1",

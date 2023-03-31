@@ -6,8 +6,8 @@ export default component$(() => {
   const serverTime = useServerTimeLoader();
 
   return (
-    <footer>
-      <a class="inline-block text-primary" href="" target="_blank">
+    <footer class="content-center text-center py-10">
+      <a class="inline-block text-primary" href="">
         Jyllands-Posten
         <span class={styles.spacer}>|</span>
       </a>
