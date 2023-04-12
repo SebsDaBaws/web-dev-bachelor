@@ -28,19 +28,21 @@ export default component$(
   }: ArticleTeaserProps) => {
     return (
       <article class="flex h-full flex-col items-center space-y-2">
-          <div class={"relative h-48 w-full overflow-hidden bg-zinc-300"}>
+          <div class={"relative flex w-full overflow-hidden bg-zinc-300"}>
             {imageUrl !== null ? <img src={imageUrl} alt="" /> : null}
           </div>
-          <h1 class="text-2xl font-bold">{headline}</h1>
+          <h1 class="text-2xl font-bold font-serif pt-4">{headline}</h1>
           <ul>
             {authors.map((author) => (
               <li key={author.name}>
-				{author.imageUrl !== null ? <img class="rounded-full w-20" src={author.imageUrl} alt="" /> : null}
+				{author.imageUrl !== null ? <img class="rounded-full w-20 pt-6" src={author.imageUrl} alt="" /> : null}
+				<p class="font-serif flex pt-2">
 				{author.name}
+				</p>
 				</li>
             ))}
           </ul>
-		<div class="prose ">
+		<div class="prose font-serif">
 				<p  dangerouslySetInnerHTML={bodyText}/>
 		</div>
 
