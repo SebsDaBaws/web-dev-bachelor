@@ -22,6 +22,7 @@
   "devDependencies": {
     "@builder.io/qwik": "0.24.0",
     "@builder.io/qwik-city": "~0.7.0",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.15.3",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",

@@ -22,5 +22,5 @@ module.exports = {
       mobile: "4 / 3",
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
