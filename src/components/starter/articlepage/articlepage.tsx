@@ -36,7 +36,7 @@ export default component$(
             {authors.map((author) => (
               <li key={author.name}>
 				{author.imageUrl !== null ? <img class="rounded-full w-20 pt-6" src={author.imageUrl} alt="" /> : null}
-				<p class="font-serif flex pt-2">
+				<p class="font-serif flex pt-2 text-primary">
 				{author.name}
 				</p>
 				</li>
