@@ -1,6 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 import { useServerTimeLoader } from "~/routes/layout";
-import styles from "./footer.module.css";
 import { JPLogo } from "../icons/jp_logo";
 
 export default component$(() => {
