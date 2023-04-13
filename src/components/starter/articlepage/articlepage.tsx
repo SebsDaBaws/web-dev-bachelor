@@ -50,13 +50,19 @@ export default component$(
           <p dangerouslySetInnerHTML={bodyText} />
         </div>
 
+        <div class="text-primary font-bold py-2">
+              Artiklens emner:
+        </div>
         <ul>
           {tags.map((tag) => (
-            <li key={tag.id}>
-              <a class="">
+            <li class="py-2" key={tag.id}>
+              
+              <button class="bg-transparent flex flex-row hover:bg-secondary text-secondary hover:text-white text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest">
                 {tag.label}
+               <a class="hidden"> 
                 {tag.id}
-              </a>
+                </a>
+                </button>
             </li>
           ))}
         </ul>
