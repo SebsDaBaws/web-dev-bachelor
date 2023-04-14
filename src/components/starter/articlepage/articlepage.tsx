@@ -31,7 +31,9 @@ export default component$(
         <div class={"relative flex w-full overflow-hidden md:px-20 lg:px-40"}>
           {imageUrl !== null ? <img src={imageUrl} alt="" /> : null}
         </div>
-        <h1 class="text-2xl font-bold font-serif pt-4 px-1 text-center">{headline}</h1>
+        <h1 class="text-2xl font-bold font-serif pt-4 px-1 text-center">
+          {headline}
+        </h1>
         <ul>
           {authors.map((author) => (
             <li class="flex-auto items-start " key={author.name}>
@@ -50,22 +52,28 @@ export default component$(
           <p dangerouslySetInnerHTML={bodyText} />
         </div>
 
-        <div class="text-primary font-bold py-6">
-              Artiklens emner:
-        </div>
-        <ul class="flex flex-wrap space-x-2 px-4 justify-center">
+        <div class="text-primary font-bold py-6">ARTIKLENS EMNER</div>
+        <ul class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-center px-4">
           {tags.map((tag) => (
-            <li class="py-2" key={tag.id}>
-              
-              <button class="bg-transparent flex flex-row hover:bg-secondary text-secondary hover:text-white text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest">
+            <li class="py-2 flex flex-row items-center flex-wrap px-1" key={tag.id}>
+              <a
+                class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm"
+                href={tag.id}
+              >
                 {tag.label}
-               <a class="hidden"> 
-                {tag.id}
-                </a>
-                </button>
+              </a>
+              <button class="bg-transparent flex flex-row hover:bg-secondary text-secondary hover:text-white text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest">
+                FØLG
+              </button>
+            
             </li>
           ))}
         </ul>
+        <a class="bg-transparent underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm py-5"
+        href="/"
+        >
+        SE DE EMNER DU FØLGER
+        </a>
       </article>
     );
   }
