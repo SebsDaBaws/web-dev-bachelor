@@ -50,10 +50,10 @@ export default component$(
           <p dangerouslySetInnerHTML={bodyText} />
         </div>
 
-        <div class="text-primary font-bold py-2">
+        <div class="text-primary font-bold py-6">
               Artiklens emner:
         </div>
-        <ul>
+        <ul class="flex flex-wrap space-x-2 px-4 justify-center">
           {tags.map((tag) => (
             <li class="py-2" key={tag.id}>
               
