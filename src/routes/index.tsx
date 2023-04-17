@@ -50,11 +50,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Jyllands-Posten - Nyheder til dig, der vil vide mere",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Jyllands-Posten",
     },
   ],
 };
