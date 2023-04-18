@@ -4,19 +4,17 @@ import { JPLogo } from "../icons/jp_logo";
 export default component$(() => {
   return (
     <header>
-      <div class="flex justify-between mt-5 mx-auto items-center">
-        <div class="py-5 px-4">
-          <span class="bg-transparent text-neutral-500 rounded uppercase tracking-widest font-medium cursor-default">
-            {new Date().toLocaleString()}
-          </span>
+      <div class="mx-auto flex max-w-screen-xl items-center py-8 pt-16">
+        <div class="basis-64">
+          <time class="uppercase">
+            <span class="pr-1 font-bold">
+              {new Date().toLocaleString("da-DK", { weekday: "long" })}
+            </span>
+            {new Date().toLocaleString("da-DK", { dateStyle: "long" })}
+          </time>
         </div>
-
-        <div>
-          <a
-            class="px-4 py-4 justify-center content-center mx-auto flex flex-col"
-            href="/"
-            title="JPLogo"
-          >
+        <div class="flex grow justify-center">
+          <a href="/">
             <JPLogo />
           </a>
         </div>

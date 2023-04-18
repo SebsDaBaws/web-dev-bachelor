@@ -52,6 +52,10 @@ export default component$(
           <p dangerouslySetInnerHTML={bodyText} />
         </div>
 
+        <div class="w-full">
+        <hr class="h-0.5 my-4 bg-black border-2" />
+      </div>
+
         <div class="text-primary font-bold py-6">ARTIKLENS EMNER</div>
         <ul class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-center px-4">
           {tags.map((tag) => (
@@ -74,6 +78,9 @@ export default component$(
         >
         SE DE EMNER DU FØLGER
         </a>
+        <div class="w-full">
+        <hr class="h-0.5 my-4 bg-black border-0" />
+      </div>
       </article>
     );
   }
