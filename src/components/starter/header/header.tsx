@@ -4,7 +4,7 @@ import { JPLogo } from "../icons/jp_logo";
 export default component$(() => {
   return (
     <header>
-      <div class="mx-auto flex max-w-screen-xl items-center py-8 pt-16">
+      <div class="mx-auto flex max-w-screen-xl items-center py-8 px-5 pt-16">
         <div class="basis-64">
           <time class="uppercase">
             <span class="pr-1 font-bold">
