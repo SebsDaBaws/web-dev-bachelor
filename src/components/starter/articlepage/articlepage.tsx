@@ -73,7 +73,7 @@ export default component$(
 
         <div class="flex h-full flex-col items-center space-y-2 lg:flex-row">
           <div class="text-primary font-bold py-6 lg:shrink-0 lg:pl-3 uppercase">
-            Artiklens emner ℹ
+            Artiklens emner <button>ℹ</button>
           </div>
           <ul class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-center px-4">
             {tags.map((tag) => (
