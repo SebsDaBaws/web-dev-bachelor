@@ -5,7 +5,9 @@ type ArticleTeaserProps = {
   readonly class?: string;
   readonly id: string;
   readonly headline: string;
+  readonly teaser: string;
   readonly imageUrl: string | null;
+  readonly caption: string;
   readonly bodyText: string;
   readonly authors: ReadonlyArray<{
     readonly name: string;
@@ -23,25 +25,33 @@ export default component$(
     class: _class,
     id,
     headline,
+    teaser,
     imageUrl,
+    caption,
     bodyText,
     authors,
     tags,
   }: ArticleTeaserProps) => {
     return (
       <article class="flex h-full flex-col items-center space-y-2">
+        <h1 class="text-2xl font-bold font-serif pt-8 pb-6 px-3.5 self-start lg:pl-40">
+          {headline}
+        </h1>
+        <h2 class="font-serif pt-4 pb-6 px-3.5 self-start lg:pl-40 break-normal max-w-5xl">
+          {teaser}
+        </h2>
         <div class={"relative flex w-full overflow-hidden md:px-20 lg:px-40"}>
           {imageUrl !== null ? <img src={imageUrl} alt="" /> : null}
         </div>
-        <h1 class="text-2xl font-bold font-serif pt-4 px-1 text-center">
-          {headline}
-        </h1>
+        <div class="text-xs font-serif pt-1 pb-1 px-3.5 self-start lg:pl-40 break-normal">
+          {caption}
+        </div>
 
         <div class="w-full pt-4">
           <hr class="h-0.5 my-4 bg-black border-2" />
         </div>
 
-        <ul class="self-start flex px-3.5 pb-4 lg:pl-48">
+        <ul class="self-start flex px-3.5 pb-4 lg:pl-40">
           {authors.map((author) => (
             <li
               class="flex-row flex items-center justify-center"
@@ -87,7 +97,8 @@ export default component$(
                 >
                   {tag.label}
                 </a>
-                <button class="bg-transparent flex flex-row hover:bg-secondary text-secondary hover:text-white text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest">
+                <button class="self-end bg-transparent flex md:flex-row hover:bg-secondary text-secondary hover:text-white 
+                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest ">
                   FØLG
                 </button>
               </li>
@@ -95,7 +106,7 @@ export default component$(
           </ul>
           <a
             class="bg-transparent underline text-black px-2 rounded tracking-widest text-sm py-5 lg:shrink-0 lg:pr-3 uppercase"
-            href="/"
+            href="/pages/tag_page"
           >
             Se de emner du følger
           </a>
