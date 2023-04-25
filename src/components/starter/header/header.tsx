@@ -5,14 +5,16 @@ export default component$(() => {
   return (
     <header>
       <div class="mx-auto flex max-w-screen-xl items-center md:py-8 md:px-5 px-2 md:pt-16 pt-4">
-        <div class="basis-64 hidden md:block">
-          <time class="uppercase ">
+        
+        <div class="basis-64 hidden md:block text-xs font-semibold tracking-wide">
+          <time class="uppercase">
             <span class="pr-1 font-bold">
               {new Date().toLocaleString("da-DK", { weekday: "long" })}
             </span>
             {new Date().toLocaleString("da-DK", { dateStyle: "long" })}
           </time>
         </div>
+
         <div class="flex grow md:justify-center items-start">
           <a href="/">
             <JPLogo />

@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
+
 type ArticleTeaserProps = {
   // Article props
   readonly class?: string;
@@ -101,6 +102,7 @@ export default component$(
                 text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest ">
                   FØLG
                 </button>
+                
               </li>
             ))}
           </ul>
