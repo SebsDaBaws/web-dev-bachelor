@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-
+import { InfoButton } from "../icons/info_button";
 
 type ArticleTeaserProps = {
   // Article props
@@ -49,10 +49,10 @@ export default component$(
         </div>
 
         <div class="w-full pt-4">
-          <hr class="h-0.5 my-4 bg-black border-2" />
+          <hr class="h-0.5 mt-4 bg-black border-2" />
         </div>
 
-        <ul class="self-start flex px-3.5 pb-4 lg:pl-40">
+        <ul class="self-start flex px-3.5 lg:pl-40">
           {authors.map((author) => (
             <li
               class="flex-row flex items-center justify-center"
@@ -83,9 +83,15 @@ export default component$(
         </div>
 
         <div class="flex h-full flex-col items-center space-y-2 lg:flex-row">
-          <div class="text-primary font-bold py-6 lg:shrink-0 lg:pl-3 uppercase">
-            Artiklens emner <button>ℹ</button>
+          <div class="text-primary font-bold py-6 lg:shrink-0 lg:basis-42 lg:pl-3 uppercase">
+            <div class="">
+              <a href="/" class="flex flex-wrap gap-x-2 items-center">
+              Artiklens emner
+                <InfoButton />
+              </a>
+            </div>
           </div>
+
           <ul class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-center px-4">
             {tags.map((tag) => (
               <li
@@ -98,11 +104,12 @@ export default component$(
                 >
                   {tag.label}
                 </a>
-                <button class="self-end bg-transparent flex md:flex-row hover:bg-secondary text-secondary hover:text-white 
-                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest ">
+                <button
+                  class="bg-transparent flex md:flex-row hover:bg-secondary text-secondary hover:text-white 
+                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest grid-cols-1"
+                >
                   FØLG
                 </button>
-                
               </li>
             ))}
           </ul>

@@ -1,5 +1,17 @@
 import { component$ } from "@builder.io/qwik";
 import { type DocumentHead } from "@builder.io/qwik-city";
+import { InfoButton } from "~/components/starter/icons/info_button";
+
+const tags = [
+  { label: "Forældreskab", id: "emneord.jp.dk,2017:foraeldreskab" },
+          { label: "Familieliv", id: "emneord.jp.dk,2017:familieliv" },
+          { label: "Efterskole", id: "emneord.jp.dk,2017:efterskole" },
+          {
+            label: "Børneopdragelse",
+            id: "emneord.jp.dk,2017:boerneopdragelse",
+          },
+    ]
+
 
 export default component$(() => {
   return (
@@ -130,6 +142,9 @@ export default component$(() => {
             </a>
           </li>
 
+
+            {/* DU FØLGER SEKTION */}
+          <div class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400"></div>
           <div class="w-full block md:hidden">
             <hr class="h-1 my-1 bg-gray-400 border-0" />
           </div>
@@ -144,6 +159,77 @@ export default component$(() => {
           </div>
         </ul>
       </main>
+
+      <div class="w-full">
+          <hr class="h-0.5 my-8 bg-black border-2" />
+        </div>
+        
+
+        
+        <div class="md:col-span-3">
+          {/* Desktop */}
+          <div class="font-serif text-2xl font-semibold break-normal max-w-2xl px-4 md:px-6 justify-start hidden md:block">
+          <p class="flex flex-wrap gap-x-2 items-center">
+              Du følger
+              <a href="/">
+                <InfoButton />
+                </a>
+              </p>
+          </div>
+
+          {/* Mobile */}
+          <div class="font-serif text-2xl font-bold break-normal max-w-2xl text-center px-4 md:px-6 justify-start block md:hidden">
+          <p class="flex flex-wrap gap-x-2 items-center">
+              Emner du følger
+              <a href="/">
+                <InfoButton />
+                </a>
+              </p>
+          </div>
+          
+          <div class="px-4 md:px-6 justify-start text-center md:text-left pb-2 md:pb-6">
+            
+          </div>
+        </div>
+
+        <ul class="flex flex-col md:flex-col md:divide-y justify-end md:col-span-9">
+          <div class="w-full block md:hidden">
+            <hr class="h-0.5 my-4 bg-black border-0" />
+          </div>
+          
+
+      <ul class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-center px-4">
+            {tags.map((tag) => (
+              <li
+                class="py-2 flex flex-row items-center flex-wrap px-1"
+                key={tag.id}
+              >
+                <a
+                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm"
+                  href={tag.id}
+                >
+                  {tag.label}
+                </a>
+                <button
+                  class="bg-secondary flex md:flex-row hover:bg-primary text-white hover:text-white 
+                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest grid-cols-1"
+                >
+                  Følger
+                </button>
+              </li>
+            ))}
+          </ul>
+          <div class="px-4 items-center py-4">
+            <button
+              class="bg-transparent hover:bg-secondary text-secondary hover:text-white py-1.5 px-10 border 
+            border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
+            >
+              <a href="">Indlæs flere emner du følger</a>
+            </button>
+          </div>
+        </ul>
+
+
     </div>
   );
 });
