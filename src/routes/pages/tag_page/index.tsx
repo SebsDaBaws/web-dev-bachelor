@@ -110,7 +110,7 @@ export default component$(() => {
                 co.{" "}
               </div>
               <img
-                class="w-40 pt-2"
+                class="w-40 pt-2  justify-end content-end items-end self-end"
                 src="https://dev.billeder.jyllands-posten.dk/pictures/image/15316063/js6a7z/ALTERNATES/master-free/superliga-broendby---silkeborg"
               />
             </a>
@@ -149,7 +149,7 @@ export default component$(() => {
             <hr class="h-1 my-1 bg-gray-400 border-0" />
           </div>
 
-          <div class="px-4 items-center py-4">
+          <div class="px-4 items-center py-4 text-center md:text-right">
             <button
               class="bg-transparent hover:bg-secondary text-secondary hover:text-white py-1.5 px-10 border 
             border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
@@ -160,7 +160,7 @@ export default component$(() => {
         </ul>
       </main>
 
-      <div class="w-full">
+      <div class="w-full hidden md:block">
           <hr class="h-0.5 my-8 bg-black border-2" />
         </div>
         
@@ -178,8 +178,8 @@ export default component$(() => {
           </div>
 
           {/* Mobile */}
-          <div class="font-serif text-2xl font-bold break-normal max-w-2xl text-center px-4 md:px-6 justify-start block md:hidden">
-          <p class="flex flex-wrap gap-x-2 items-center">
+          <div class="font-serif text-2xl font-bold break-normal max-w-2xl px-4 md:px-6 pt-10 md:pt-1 block md:hidden">
+          <p class="flex flex-wrap gap-x-2 items-center justify-center">
               Emner du følger
               <a href="/">
                 <InfoButton />
@@ -198,10 +198,10 @@ export default component$(() => {
           </div>
           
 
-      <ul class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-center px-4">
+      <ul class="flex flex-wrap flex-col sm:flex-row justify-center px-4">
             {tags.map((tag) => (
               <li
-                class="py-2 flex flex-row items-center flex-wrap px-1"
+                class="py-2 flex flex-row items-center justify-center flex-wrap px-1"
                 key={tag.id}
               >
                 <a
@@ -219,7 +219,7 @@ export default component$(() => {
               </li>
             ))}
           </ul>
-          <div class="px-4 items-center py-4">
+          <div class="px-4 py-6 text-center md:text-right">
             <button
               class="bg-transparent hover:bg-secondary text-secondary hover:text-white py-1.5 px-10 border 
             border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
