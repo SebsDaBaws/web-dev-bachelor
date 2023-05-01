@@ -99,14 +99,14 @@ export default component$(
                 key={tag.id}
               >
                 <a
-                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm grow "
+                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm grow"
                   href={tag.id}
                 >
                   {tag.label}
                 </a>
                 <button
                   class="bg-transparent flex md:flex-row hover:bg-secondary text-secondary hover:text-white 
-                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest "
+                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest"
                 >
                   FØLG
                 </button>

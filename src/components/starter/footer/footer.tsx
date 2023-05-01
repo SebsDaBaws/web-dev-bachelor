@@ -12,6 +12,7 @@ export default component$(() => {
           class="px-4 py-4 inline-block justify-center place-content-center"
           href="/"
           title="JPLogo"
+          style="fill:#FFFFFF"
         >
           <JPLogo />
         </a>

@@ -4,14 +4,13 @@ import { InfoButton } from "~/components/starter/icons/info_button";
 
 const tags = [
   { label: "Forældreskab", id: "emneord.jp.dk,2017:foraeldreskab" },
-          { label: "Familieliv", id: "emneord.jp.dk,2017:familieliv" },
-          { label: "Efterskole", id: "emneord.jp.dk,2017:efterskole" },
-          {
-            label: "Børneopdragelse",
-            id: "emneord.jp.dk,2017:boerneopdragelse",
-          },
-    ]
-
+  { label: "Familieliv", id: "emneord.jp.dk,2017:familieliv" },
+  { label: "Efterskole", id: "emneord.jp.dk,2017:efterskole" },
+  {
+    label: "Børneopdragelse",
+    id: "emneord.jp.dk,2017:boerneopdragelse",
+  },
+];
 
 export default component$(() => {
   return (
@@ -49,14 +48,11 @@ export default component$(() => {
               <div class="pb-2 md:pb-1 text-xs">
                 <time>15:47 |</time>
                 <nobr class="text-primary font-semibold uppercase">
-                  {" "}
-                  Krigen i Ukraine{" "}
+                  {" "}Krigen i Ukraine{" "}
                 </nobr>
               </div>
               <div class="flex flex-row justify-between border-r font-serif">
-                {" "}
-                Manglen på granater er ved at være mærkbar på begge sider i
-                Ukraine{" "}
+                {" "}Manglen på granater er ved at være mærkbar på begge sider i Ukraine{" "}
               </div>
               <img
                 class="w-40 pt-2 self-end"
@@ -75,13 +71,11 @@ export default component$(() => {
               <div class="pb-2 md:pb-1 text-xs">
                 <time>15:47 |</time>
                 <nobr class="text-primary font-semibold uppercase">
-                  {" "}
-                  Skole & uddannelse{" "}
+                  {" "}Skole & uddannelse{" "}
                 </nobr>
               </div>
               <div class="flex flex-row justify-between border-r font-serif">
-                {" "}
-                Forstandere taler om, at der er noget, forældrene har glemt{" "}
+                {" "}Forstandere taler om, at der er noget, forældrene har glemt{" "}
               </div>
               <img
                 class="w-40 pt-2"
@@ -100,14 +94,11 @@ export default component$(() => {
               <div class="pb-2 md:pb-1 text-xs">
                 <time>15:47 |</time>
                 <nobr class="text-primary font-semibold uppercase">
-                  {" "}
-                  Sport{" "}
+                  {" "}Sport{" "}
                 </nobr>
               </div>
               <div class="flex flex-row justify-between border-r font-serif">
-                {" "}
-                Lige netop dette nederlag gjorde ekstra ondt for Kent Nielsen og
-                co.{" "}
+                {" "}Lige netop dette nederlag gjorde ekstra ondt for Kent Nielsen og co.{" "}
               </div>
               <img
                 class="w-40 pt-2  justify-end content-end items-end self-end"
@@ -126,14 +117,11 @@ export default component$(() => {
               <div class="pb-2 md:pb-1 text-xs">
                 <time>15:47 |</time>
                 <nobr class="text-primary font-semibold uppercase">
-                  {" "}
-                  Politik{" "}
+                  {" "}Politik{" "}
                 </nobr>
               </div>
               <div class="flex flex-row justify-between border-r font-serif">
-                {" "}
-                »Hvis Jon Stephensen havde trukket 5 mio. kr. ud, vil jeg tro,
-                at bestyrelsen var gået videre«{" "}
+                {" "}»Hvis Jon Stephensen havde trukket 5 mio. kr. ud, vil jeg tro, at bestyrelsen var gået videre«{" "}
               </div>
               <img
                 class="w-40 pt-2"
@@ -143,7 +131,7 @@ export default component$(() => {
           </li>
 
 
-            {/* DU FØLGER SEKTION */}
+          {/* DU FØLGER SEKTION */}
           <div class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400"></div>
           <div class="w-full block md:hidden">
             <hr class="h-1 my-1 bg-gray-400 border-0" />
@@ -161,58 +149,56 @@ export default component$(() => {
       </main>
 
       <div class="w-full hidden md:block">
-          <hr class="h-0.5 my-8 bg-black border-2" />
-        </div>
-        
+        <hr class="h-0.5 my-8 bg-black border-2" />
+      </div>
 
-        
+
+      <section class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400">
+
         <div class="md:col-span-3">
           {/* Desktop */}
           <div class="font-serif text-2xl font-semibold break-normal max-w-2xl px-4 md:px-6 justify-start hidden md:block">
-          <p class="flex flex-wrap gap-x-2 items-center">
+            <p class="flex flex-wrap gap-x-2 items-center">
               Du følger
               <a href="/">
                 <InfoButton />
-                </a>
-              </p>
+              </a>
+            </p>
           </div>
 
           {/* Mobile */}
           <div class="font-serif text-2xl font-bold break-normal max-w-2xl px-4 md:px-6 pt-10 md:pt-1 block md:hidden">
-          <p class="flex flex-wrap gap-x-2 items-center justify-center">
+            <p class="flex flex-wrap gap-x-2 items-center justify-center">
               Emner du følger
               <a href="/">
                 <InfoButton />
-                </a>
-              </p>
+              </a>
+            </p>
           </div>
-          
-          <div class="px-4 md:px-6 justify-start text-center md:text-left pb-2 md:pb-6">
-            
-          </div>
+
+          <div class="px-4 md:px-6 justify-start text-center md:text-left pb-2 md:pb-6"></div>
         </div>
 
         <ul class="flex flex-col md:flex-col md:divide-y justify-end md:col-span-9">
           <div class="w-full block md:hidden">
             <hr class="h-0.5 my-4 bg-black border-0" />
           </div>
-          
 
-      <ul class="flex flex-wrap flex-col sm:flex-row justify-center px-4">
+          <ul class="flex flex-wrap flex-col sm:flex-row justify-center md:justify-start mx-2 md:mx-8">
             {tags.map((tag) => (
               <li
-                class="py-2 flex flex-row items-center justify-center flex-wrap px-1"
+                class="py-2 flex flex-row items-center justify-center flex-wrap px-1 underline"
                 key={tag.id}
               >
                 <a
-                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm"
+                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm grow hover:font-semibold"
                   href={tag.id}
                 >
                   {tag.label}
                 </a>
                 <button
                   class="bg-secondary flex md:flex-row hover:bg-primary text-white hover:text-white 
-                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest grid-cols-1"
+                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest"
                 >
                   Følger
                 </button>
@@ -228,13 +214,12 @@ export default component$(() => {
             </button>
           </div>
         </ul>
-
-
+      </section>
     </div>
   );
 });
 
-// TODO: Slet hvis ikke bruges
+
 export const head: DocumentHead = {
   title: "",
 };
