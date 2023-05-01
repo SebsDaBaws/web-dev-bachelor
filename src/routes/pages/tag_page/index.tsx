@@ -42,29 +42,6 @@ export default component$(() => {
             <hr class="h-1 my-1 bg-gray-400 border-0" />
           </div>
 
-          <li class="pt-6 pb-4 mx-4">
-            {/* Article "id": 15279010 */}
-            <a href="https://dev.jyllands-posten.dk/international/europa/ECE15279010/granater-fra-sovjettiden-regner-ned-over-bakhmut/">
-              <div class="pb-2 md:pb-1 text-xs">
-                <time>15:47 |</time>
-                <nobr class="text-primary font-semibold uppercase">
-                  {" "}Krigen i Ukraine{" "}
-                </nobr>
-              </div>
-              <div class="flex flex-row justify-between border-r font-serif">
-                {" "}Manglen på granater er ved at være mærkbar på begge sider i Ukraine{" "}
-              </div>
-              <img
-                class="w-40 pt-2 self-end"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15044995/t3o5s8/ALTERNATES/master-free/artilleri-donbas"
-              />
-            </a>
-          </li>
-
-          <div class="w-full block md:hidden">
-            <hr class="h-1 my-1 bg-gray-400 border-0" />
-          </div>
-
           <li class="py-4 mx-4">
             {/* Article "id": 15275559 */}
             <a href="/">
@@ -80,6 +57,29 @@ export default component$(() => {
               <img
                 class="w-40 pt-2"
                 src="https://dev.billeder.jyllands-posten.dk/pictures/image/15313307/kfxrrl/ALTERNATES/master-free/efterskoler-kaemper-med-pyldrede-foraeldre"
+              />
+            </a>
+          </li>
+
+          <div class="w-full block md:hidden">
+            <hr class="h-1 my-1 bg-gray-400 border-0" />
+          </div>
+
+          <li class="pt-6 pb-4 mx-4">
+            {/* Article "id": 15279010 */}
+            <a href="https://dev.jyllands-posten.dk/international/europa/ECE15279010/granater-fra-sovjettiden-regner-ned-over-bakhmut/">
+              <div class="pb-2 md:pb-1 text-xs">
+                <time>15:47 |</time>
+                <nobr class="text-primary font-semibold uppercase">
+                  {" "}Krigen i Ukraine{" "}
+                </nobr>
+              </div>
+              <div class="flex flex-row justify-between border-r font-serif">
+                {" "}Manglen på granater er ved at være mærkbar på begge sider i Ukraine{" "}
+              </div>
+              <img
+                class="w-40 pt-2 self-end"
+                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15044995/t3o5s8/ALTERNATES/master-free/artilleri-donbas"
               />
             </a>
           </li>
@@ -130,8 +130,6 @@ export default component$(() => {
             </a>
           </li>
 
-
-          {/* DU FØLGER SEKTION */}
           <div class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400"></div>
           <div class="w-full block md:hidden">
             <hr class="h-1 my-1 bg-gray-400 border-0" />
@@ -148,11 +146,13 @@ export default component$(() => {
         </ul>
       </main>
 
+
       <div class="w-full hidden md:block">
         <hr class="h-0.5 my-8 bg-black border-2" />
       </div>
 
 
+      {/* Emner du følger */}
       <section class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400">
 
         <div class="md:col-span-3">

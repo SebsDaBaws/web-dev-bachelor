@@ -35,7 +35,7 @@ export default component$(
   }: ArticleTeaserProps) => {
     return (
       <article class="flex h-full flex-col items-center space-y-2">
-        <h1 class="text-2xl font-bold font-serif pt-8 pb-6 px-3.5 self-start lg:pl-40">
+        <h1 class="text-2xl lg:text-3xl font-bold font-serif pt-8 pb-6 px-3.5 self-start lg:pl-40">
           {headline}
         </h1>
         <h2 class="font-serif pt-4 pb-6 px-3.5 self-start lg:pl-40 break-normal max-w-5xl">
@@ -84,12 +84,13 @@ export default component$(
 
         <div class="flex h-full flex-col items-center space-y-2 lg:flex-row">
           <div class="text-primary font-bold py-6 lg:shrink-0 lg:basis-42 lg:pl-3 uppercase">
-            <div class="">
-              <a href="/" class="flex flex-wrap gap-x-2 items-center">
+            <p class="flex flex-wrap gap-x-2 items-center">
               Artiklens emner
+              <a href="/" class="">
+              
                 <InfoButton />
               </a>
-            </div>
+            </p>
           </div>
 
           <ul class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-center px-4">
