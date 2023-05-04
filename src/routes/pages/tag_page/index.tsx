@@ -25,14 +25,14 @@ export default component$(() => {
       <main class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400 container mx-auto">
         <div class="md:col-span-3">
           {/* Desktop */}
-          <div class="font-serif text-2xl font-semibold break-normal max-w-2xl px-4 md:px-6 justify-start hidden md:block">
+          <div class="font-serif text-2xl font-black break-normal max-w-2xl px-4 md:px-6 justify-start hidden md:block">
             Emner du følger
           </div>
           {/* Mobile */}
           <div class="font-serif text-2xl font-bold break-normal max-w-2xl text-center px-4 md:px-6 justify-start block md:hidden">
             Nyt fra emner du følger
           </div>
-          <div class="px-4 md:px-6 justify-start text-center md:text-left pb-6 md:pb-0">
+          <div class="px-4 md:px-6 justify-start text-center md:text-left pb-3 md:pb-0">
             Seneste 48 timer
           </div>
         </div>
@@ -54,7 +54,7 @@ export default component$(() => {
                   </nobr>
                 </div>
 
-                <div class="flex flex-row justify-between border-r font-serif pr-5">
+                <div class="flex flex-row justify-between border-r font-serif pr-5 font-bold">
                   {" "}
                   Forstandere taler om, at der er noget, forældrene har glemt{" "}
                 </div>
@@ -203,7 +203,7 @@ export default component$(() => {
             </p>
           </div>
 
-          <div class="px-4 md:px-6 justify-start text-center md:text-left pb-2 md:pb-6"></div>
+          <div class="px-4 md:px-6 justify-start text-center md:text-left md:pb-3"></div>
         </div>
 
         <ul class="flex flex-col md:flex-col md:divide-y justify-end md:col-span-9">
@@ -214,18 +214,18 @@ export default component$(() => {
           <ul class="flex flex-wrap flex-col sm:flex-row justify-center md:justify-start mx-2 md:mx-8">
             {tags.map((tag) => (
               <li
-                class="py-2 flex flex-row items-center justify-center flex-wrap px-1 underline"
+                class="py-2 flex flex-row items-center justify-center flex-wrap px-1"
                 key={tag.id}
               >
                 <a
-                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm grow hover:font-semibold"
+                  class="bg-transparent underline text-black py-3 px-2 rounded uppercase tracking-widest text-sm grow hover:font-semibold"
                   href={tag.id}
                 >
                   {tag.label}
                 </a>
                 <button
                   class="bg-secondary flex md:flex-row hover:bg-primary text-white hover:text-white 
-                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest"
+                text-xs py-2 md:py-1 px-3 border border-secondary hover:border-transparent rounded uppercase tracking-widest"
                 >
                   Følger
                 </button>

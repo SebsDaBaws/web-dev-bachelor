@@ -111,18 +111,18 @@ export default component$(
           <ul class="flex flex-wrap flex-col sm:flex-row justify-center md:justify-start mx-2 md:mx-8">
             {tags.map((tag) => (
               <li
-                class="py-2 flex flex-row items-center justify-center flex-wrap px-1 underline"
+                class="py-2 flex flex-row items-center justify-center flex-wrap px-1"
                 key={tag.id}
               >
                 <a
-                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm grow hover:font-semibold"
+                  class="bg-transparent underline text-black py-3 px-2 rounded uppercase tracking-widest text-sm grow hover:font-semibold"
                   href={tag.id}
                 >
                   {tag.label}
                 </a>
                 <button
                   class="bg-white flex md:flex-row hover:bg-primary text-primary hover:text-white 
-                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest no-underline"
+                text-xs py-2 md:py-1 px-3 border border-secondary hover:border-transparent rounded uppercase tracking-widest no-underline"
                 >
                   Følg
                 </button>
