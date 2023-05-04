@@ -1,7 +1,11 @@
-import component$ from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 
-export const JPLogo = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 653.96 74" width="100%" height="100%">
+export type JPLogoProps = {
+  readonly class?: string;
+};
+
+export const JPLogo = component$( (props: JPLogoProps) => (
+  <svg class={props.class} viewBox="0 0 653.96 74">
     
   <path d="M42.44,41.79c0,12.32-9.18,19.08-21.98,19.08C6.68,60.87,0,52.5,0,43.8c0-6.36,3.62-11.6,10.07-11.6,5.07,0,8.37,2.98,8.37,7.89s-3.06,7.25-7.41,7.25c-.73,0-1.37-.08-1.85-.24,1.21,4.11,4.19,5.8,8.86,5.8,6.2,0,9.1-2.82,9.1-10.63V14.17c0-4.27-1.05-5.56-5.39-5.8l-5.64-.32V1.21H53.47v6.84l-5.64,.32c-4.35,.24-5.39,1.53-5.39,5.8v27.62Z;"/>
   
@@ -37,4 +41,4 @@ export const JPLogo = () => (
   </svg>
 
 
-);
+));

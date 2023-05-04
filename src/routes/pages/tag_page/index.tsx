@@ -166,7 +166,7 @@ export default component$(() => {
 
           <div class="px-4 items-center py-4 text-center md:text-right">
             <button
-              class="bg-transparent hover:bg-secondary text-secondary hover:text-white py-1.5 px-10 border 
+              class="bg-transparent hover:bg-secondary text-secondary hover:text-white md:py-1.5 md:px-10 py-2.5 px-24 border 
             border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
             >
               <a href="">Indlæs flere artikler</a>
@@ -234,7 +234,7 @@ export default component$(() => {
           </ul>
           <div class="px-4 py-6 text-center md:text-right">
             <button
-              class="bg-transparent hover:bg-secondary text-secondary hover:text-white py-1.5 px-10 border 
+              class="bg-transparent hover:bg-secondary text-secondary hover:text-white md:py-1.5 md:px-10 py-2.5 px-16 border 
             border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
             >
               <a href="">Indlæs flere emner du følger</a>

@@ -17,7 +17,7 @@ export default component$(() => {
 
         <div class="flex grow md:justify-center items-start">
           <a href="/">
-            <JPLogo />
+            <JPLogo class="h-6 md:h-10 lg:h-12"/>
           </a>
         </div>
 
