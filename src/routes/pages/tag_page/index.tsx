@@ -22,7 +22,7 @@ export default component$(() => {
         <hr class="h-1 my-8 md:my-12 bg-black border-0" />
       </div>
 
-      <main class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400">
+      <main class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400 container mx-auto">
         <div class="md:col-span-3">
           {/* Desktop */}
           <div class="font-serif text-2xl font-semibold break-normal max-w-2xl px-4 md:px-6 justify-start hidden md:block">
@@ -44,15 +44,20 @@ export default component$(() => {
 
           <li class="py-4 mx-4">
             {/* Article "id": 15275559 */}
-            <a href="/">
-              <div class="pb-2 md:pb-1 text-xs">
-                <time>15:47 |</time>
-                <nobr class="text-primary font-semibold uppercase">
-                  {" "}Skole & uddannelse{" "}
-                </nobr>
-              </div>
-              <div class="flex flex-row justify-between border-r font-serif">
-                {" "}Forstandere taler om, at der er noget, forældrene har glemt{" "}
+            <a class="flex" href="/">
+              <div class="grow">
+                <div class="pb-2 md:pb-1 text-xs">
+                  <time>15:47 |</time>
+                  <nobr class="text-primary font-semibold uppercase">
+                    {" "}
+                    Skole & uddannelse{" "}
+                  </nobr>
+                </div>
+
+                <div class="flex flex-row justify-between border-r font-serif pr-5">
+                  {" "}
+                  Forstandere taler om, at der er noget, forældrene har glemt{" "}
+                </div>
               </div>
               <img
                 class="w-40 pt-2"
@@ -67,18 +72,26 @@ export default component$(() => {
 
           <li class="pt-6 pb-4 mx-4">
             {/* Article "id": 15279010 */}
-            <a href="https://dev.jyllands-posten.dk/international/europa/ECE15279010/granater-fra-sovjettiden-regner-ned-over-bakhmut/">
-              <div class="pb-2 md:pb-1 text-xs">
-                <time>15:47 |</time>
-                <nobr class="text-primary font-semibold uppercase">
-                  {" "}Krigen i Ukraine{" "}
-                </nobr>
-              </div>
-              <div class="flex flex-row justify-between border-r font-serif">
-                {" "}Manglen på granater er ved at være mærkbar på begge sider i Ukraine{" "}
+            <a
+              class="flex"
+              href="https://dev.jyllands-posten.dk/international/europa/ECE15279010/granater-fra-sovjettiden-regner-ned-over-bakhmut/"
+            >
+              <div class="grow">
+                <div class="pb-2 md:pb-1 text-xs">
+                  <time>15:47 |</time>
+                  <nobr class="text-primary font-semibold uppercase">
+                    {" "}
+                    Krigen i Ukraine{" "}
+                  </nobr>
+                </div>
+                <div class="flex flex-row justify-between border-r font-serif pr-5">
+                  {" "}
+                  Manglen på granater er ved at være mærkbar på begge sider i
+                  Ukraine{" "}
+                </div>
               </div>
               <img
-                class="w-40 pt-2 self-end"
+                class="w-40 pt-2"
                 src="https://dev.billeder.jyllands-posten.dk/pictures/image/15044995/t3o5s8/ALTERNATES/master-free/artilleri-donbas"
               />
             </a>
@@ -90,18 +103,26 @@ export default component$(() => {
 
           <li class="py-4 mx-4">
             {/* Article "id": 15273987 */}
-            <a href="https://dev.jyllands-posten.dk/sport/fodbold/ECE15273987/lige-netop-dette-nederlag-gjorde-ekstra-ondt-for-kent-nielsen-og-co/">
-              <div class="pb-2 md:pb-1 text-xs">
-                <time>15:47 |</time>
-                <nobr class="text-primary font-semibold uppercase">
-                  {" "}Sport{" "}
-                </nobr>
-              </div>
-              <div class="flex flex-row justify-between border-r font-serif">
-                {" "}Lige netop dette nederlag gjorde ekstra ondt for Kent Nielsen og co.{" "}
+            <a
+              class="flex"
+              href="https://dev.jyllands-posten.dk/sport/fodbold/ECE15273987/lige-netop-dette-nederlag-gjorde-ekstra-ondt-for-kent-nielsen-og-co/"
+            >
+              <div class="grow">
+                <div class="pb-2 md:pb-1 text-xs">
+                  <time>15:47 |</time>
+                  <nobr class="text-primary font-semibold uppercase">
+                    {" "}
+                    Sport{" "}
+                  </nobr>
+                </div>
+                <div class="flex flex-row justify-between border-r font-serif pr-5">
+                  {" "}
+                  Lige netop dette nederlag gjorde ekstra ondt for Kent Nielsen
+                  og co.{" "}
+                </div>
               </div>
               <img
-                class="w-40 pt-2  justify-end content-end items-end self-end"
+                class="w-40 pt-2"
                 src="https://dev.billeder.jyllands-posten.dk/pictures/image/15316063/js6a7z/ALTERNATES/master-free/superliga-broendby---silkeborg"
               />
             </a>
@@ -113,15 +134,23 @@ export default component$(() => {
 
           <li class="py-4 mx-4">
             {/* Article "id": 15316002 */}
-            <a href="https://dev.jyllands-posten.dk/politik/ECE15316002/eksperter-jon-stephensens-paastaaede-forseelse-er-ikke-grov-nok-til-en-politianmeldelse/">
-              <div class="pb-2 md:pb-1 text-xs">
-                <time>15:47 |</time>
-                <nobr class="text-primary font-semibold uppercase">
-                  {" "}Politik{" "}
-                </nobr>
-              </div>
-              <div class="flex flex-row justify-between border-r font-serif">
-                {" "}»Hvis Jon Stephensen havde trukket 5 mio. kr. ud, vil jeg tro, at bestyrelsen var gået videre«{" "}
+            <a
+              class="flex"
+              href="https://dev.jyllands-posten.dk/politik/ECE15316002/eksperter-jon-stephensens-paastaaede-forseelse-er-ikke-grov-nok-til-en-politianmeldelse/"
+            >
+              <div class="grow">
+                <div class="pb-2 md:pb-1 text-xs">
+                  <time>15:47 |</time>
+                  <nobr class="text-primary font-semibold uppercase">
+                    {" "}
+                    Politik{" "}
+                  </nobr>
+                </div>
+                <div class="flex flex-row justify-between border-r font-serif pr-5">
+                  {" "}
+                  »Hvis Jon Stephensen havde trukket 5 mio. kr. ud, vil jeg tro,
+                  at bestyrelsen var gået videre«{" "}
+                </div>
               </div>
               <img
                 class="w-40 pt-2"
@@ -146,15 +175,13 @@ export default component$(() => {
         </ul>
       </main>
 
-
       <div class="w-full hidden md:block">
         <hr class="h-0.5 my-8 bg-black border-2" />
       </div>
 
 
       {/* Emner du følger */}
-      <section class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400">
-
+      <section class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400 container mx-auto">
         <div class="md:col-span-3">
           {/* Desktop */}
           <div class="font-serif text-2xl font-semibold break-normal max-w-2xl px-4 md:px-6 justify-start hidden md:block">
@@ -215,11 +242,20 @@ export default component$(() => {
           </div>
         </ul>
       </section>
+
+      <div class="w-full hidden md:block">
+        <hr class="h-0.5 my-8 bg-black border-2" />
+      </div>
     </div>
   );
 });
 
-
 export const head: DocumentHead = {
-  title: "",
+  title: "Jyllands-Posten - Emner du følger",
+  meta: [
+    {
+      name: "description",
+      content: "Jyllands-Posten - Emner du følger",
+    },
+  ],
 };

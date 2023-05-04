@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { InfoButton } from "../icons/info_button";
+import Emner from "../Artiklens-emner/emner";
 
 type ArticleTeaserProps = {
   // Article props
@@ -34,7 +35,8 @@ export default component$(
     tags,
   }: ArticleTeaserProps) => {
     return (
-      <article class="flex h-full flex-col items-center space-y-2">
+      <article class="container mx-auto">
+        <section class="flex h-full flex-col items-center space-y-2">
         <h1 class="text-2xl lg:text-3xl font-bold font-serif pt-8 pb-6 px-3.5 self-start lg:pl-40">
           {headline}
         </h1>
@@ -82,49 +84,73 @@ export default component$(
           <hr class="h-0.5 my-4 bg-black border-2" />
         </div>
 
-        <div class="flex h-full flex-col items-center space-y-2 lg:flex-row">
-          <div class="text-primary font-bold py-6 lg:shrink-0 lg:basis-42 lg:pl-3 uppercase">
+        </section>
+
+        <section class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400">
+
+        <div class="md:col-span-3">
+          
+          <div class="text-lg md:text-lg font-bold break-normal max-w-2xl px-4 md:px-6 justify-start uppercase text-primary">
             <p class="flex flex-wrap gap-x-2 items-center">
               Artiklens emner
-              <a href="/" class="">
-              
+              <a href="/">
                 <InfoButton />
               </a>
             </p>
           </div>
 
-          <ul class="flex flex-wrap flex-col sm:flex-row justify-center sm:justify-center px-4">
+
+          <div class="px-4 md:px-6 justify-start text-center md:text-left pb-2 md:pb-6"></div>
+        </div>
+
+        <ul class="flex flex-col md:flex-col md:divide-y justify-end md:col-span-9">
+          <div class="w-full block md:hidden">
+            <hr class="h-0.5 my-4 bg-black border-0" />
+          </div>
+
+          <ul class="flex flex-wrap flex-col sm:flex-row justify-center md:justify-start mx-2 md:mx-8">
             {tags.map((tag) => (
               <li
-                class="py-2 flex flex-row items-center flex-wrap px-1"
+                class="py-2 flex flex-row items-center justify-center flex-wrap px-1 underline"
                 key={tag.id}
               >
                 <a
-                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm grow"
+                  class="bg-transparent hover:underline text-black py-1 px-2 rounded uppercase tracking-widest text-sm grow hover:font-semibold"
                   href={tag.id}
                 >
                   {tag.label}
                 </a>
                 <button
-                  class="bg-transparent flex md:flex-row hover:bg-secondary text-secondary hover:text-white 
-                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest"
+                  class="bg-white flex md:flex-row hover:bg-primary text-primary hover:text-white 
+                text-xs py-1 px-2 border border-secondary hover:border-transparent rounded uppercase tracking-widest no-underline"
                 >
-                  FØLG
+                  Følg
                 </button>
               </li>
             ))}
           </ul>
+          <div class="text-center lg:px-10 pt-5">
           <a
-            class="bg-transparent underline text-black px-2 rounded tracking-widest text-sm py-5 lg:shrink-0 lg:pr-3 uppercase"
+            class="bg-transparent underline self:center text-black px-2 rounded tracking-widest text-sm py-5 lg:shrink-0 lg:pr-3 uppercase"
             href="/pages/tag_page"
           >
             Se de emner du følger
           </a>
-        </div>
+          </div>
+        </ul>
+        
+      </section>
+
+      
 
         <div class="w-full">
           <hr class="h-0.5 my-4 bg-black border-0" />
         </div>
+
+        {/* Mobile  <div>
+                <Emner />
+              </div>
+        */}
       </article>
     );
   }
