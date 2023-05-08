@@ -14,9 +14,9 @@ export default component$(() => {
           title="JPLogo"
           style="fill:#FFFFFF"
         >
-          <JPLogo />
+          <JPLogo class="h-6 md:h-8 lg:h-10"/>
         </a>
-        <p class="font-serif">Grundlagt i 1871</p>
+        <p class="font-serif text-sm md:text-base">Grundlagt i 1871</p>
       </div>
     </footer>
   );
