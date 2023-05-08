@@ -54,13 +54,15 @@ export default component$(() => {
                   </nobr>
                 </div>
 
-                <div class="flex flex-row justify-between border-r font-serif pr-5 font-bold">
+                <div class="flex flex-row justify-between border-r font-serif pr-5 font-semibold">
                   {" "}
                   Forstandere taler om, at der er noget, forældrene har glemt{" "}
                 </div>
               </div>
               <img
                 class="w-40 pt-2"
+                width="320" 
+                height="213"
                 src="https://dev.billeder.jyllands-posten.dk/pictures/image/15313307/kfxrrl/ALTERNATES/master-free/efterskoler-kaemper-med-pyldrede-foraeldre"
               />
             </a>
@@ -84,7 +86,7 @@ export default component$(() => {
                     Krigen i Ukraine{" "}
                   </nobr>
                 </div>
-                <div class="flex flex-row justify-between border-r font-serif pr-5">
+                <div class="flex flex-row justify-between border-r font-serif pr-5 font-semibold">
                   {" "}
                   Manglen på granater er ved at være mærkbar på begge sider i
                   Ukraine{" "}
@@ -115,7 +117,7 @@ export default component$(() => {
                     Sport{" "}
                   </nobr>
                 </div>
-                <div class="flex flex-row justify-between border-r font-serif pr-5">
+                <div class="flex flex-row justify-between border-r font-serif pr-5 font-semibold">
                   {" "}
                   Lige netop dette nederlag gjorde ekstra ondt for Kent Nielsen
                   og co.{" "}
@@ -146,7 +148,7 @@ export default component$(() => {
                     Politik{" "}
                   </nobr>
                 </div>
-                <div class="flex flex-row justify-between border-r font-serif pr-5">
+                <div class="flex flex-row justify-between border-r font-serif pr-5 font-semibold">
                   {" "}
                   »Hvis Jon Stephensen havde trukket 5 mio. kr. ud, vil jeg tro,
                   at bestyrelsen var gået videre«{" "}

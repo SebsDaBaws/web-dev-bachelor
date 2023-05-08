@@ -46,7 +46,7 @@ export default component$(
         <div class={"relative flex w-full overflow-hidden md:px-20 lg:px-40"}>
           {imageUrl !== null ? <img src={imageUrl} alt="" /> : null}
         </div>
-        <div class="text-xs font-serif pt-1 pb-1 px-3.5 self-start lg:pl-40 break-normal">
+        <div class="text-xs font-sans-serif pt-1 pb-1 px-3.5 self-start lg:pl-40 break-normal">
           {caption}
         </div>
 
@@ -147,7 +147,7 @@ export default component$(
           <hr class="h-0.5 my-4 bg-black border-0" />
         </div>
 
-        {/* Mobile  <div>
+        {/*  <div>
                 <Emner />
               </div>
         */}
