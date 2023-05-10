@@ -62,12 +62,12 @@ export default component$(
             >
               {author.imageUrl !== null ? (
                 <img
-                  class="rounded-full w-8 pr-2 pt-2 object-center"
+                  class="rounded-full w-11 pr-2 pt-2 object-center"
                   src={author.imageUrl.replace("/master-free/", "/byline/")}
                   alt=""
                 />
               ) : null}
-              <p class="font-serif flex pt-4 text-primary">{author.name}</p>
+              <p class="font-serif flex pt-4 text-primary uppercase text-xs font-bold">{author.name}</p>
             </li>
           ))}
         </ul>
@@ -129,9 +129,10 @@ export default component$(
               </li>
             ))}
           </ul>
-          <div class="text-center lg:px-10 pt-5">
+          <div class="px-4 py-6 text-center md:text-right">
           <a
-            class="bg-transparent underline self:center text-black px-2 rounded tracking-widest text-sm py-5 lg:shrink-0 lg:pr-3 uppercase"
+            class="bg-transparent hover:bg-secondary text-secondary hover:text-white md:py-1.5 md:px-10 py-2.5 px-16 border 
+            border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
             href="/pages/tag_page"
           >
             Se de emner du følger

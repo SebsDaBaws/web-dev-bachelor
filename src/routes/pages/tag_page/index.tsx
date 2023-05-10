@@ -63,7 +63,7 @@ export default component$(() => {
                 class="w-40 pt-2"
                 width="320" 
                 height="213"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15313307/kfxrrl/ALTERNATES/master-free/efterskoler-kaemper-med-pyldrede-foraeldre"
+                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15313307/kfxrrl/ALTERNATES/e-free/efterskoler-kaemper-med-pyldrede-foraeldre"
               />
             </a>
           </li>
@@ -94,7 +94,7 @@ export default component$(() => {
               </div>
               <img
                 class="w-40 pt-2"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15044995/t3o5s8/ALTERNATES/master-free/artilleri-donbas"
+                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15044995/t3o5s8/ALTERNATES/e-free/artilleri-donbas"
               />
             </a>
           </li>
@@ -125,7 +125,7 @@ export default component$(() => {
               </div>
               <img
                 class="w-40 pt-2"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15316063/js6a7z/ALTERNATES/master-free/superliga-broendby---silkeborg"
+                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15316063/js6a7z/ALTERNATES/e-free/superliga-broendby---silkeborg"
               />
             </a>
           </li>
@@ -156,7 +156,7 @@ export default component$(() => {
               </div>
               <img
                 class="w-40 pt-2"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15316021/mxx5t8/ALTERNATES/master-free/moderaternes-kulturordfoerer-jon-stephensen-moeder-pressen"
+                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15316021/mxx5t8/ALTERNATES/e-free/moderaternes-kulturordfoerer-jon-stephensen-moeder-pressen"
               />
             </a>
           </li>
