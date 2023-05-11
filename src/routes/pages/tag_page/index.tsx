@@ -39,7 +39,7 @@ export default component$(() => {
 
         <ul class="flex flex-col md:flex-col md:divide-y justify-end md:col-span-9">
           <div class="w-full block md:hidden">
-            <hr class="h-1 my-1 bg-gray-400 border-0" />
+            <hr class="h-1 my-1 bg-gray-400 border-0 mx-2" />
           </div>
 
           <li class="py-4 mx-4">
@@ -61,22 +61,22 @@ export default component$(() => {
               </div>
               <img
                 class="w-40 pt-2"
-                width="320" 
+                width="320"
                 height="213"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15313307/kfxrrl/ALTERNATES/e-free/efterskoler-kaemper-med-pyldrede-foraeldre"
+                src="https://billeder.jyllands-posten.dk/pictures/image/15313307/kfxrrl/ALTERNATES/e-free/efterskoler-kaemper-med-pyldrede-foraeldre"
               />
             </a>
           </li>
 
           <div class="w-full block md:hidden">
-            <hr class="h-1 my-1 bg-gray-400 border-0" />
+            <hr class="h-1 my-1 bg-gray-400 border-0 mx-2" />
           </div>
 
           <li class="pt-6 pb-4 mx-4">
             {/* Article "id": 15279010 */}
             <a
               class="flex"
-              href="https://dev.jyllands-posten.dk/international/europa/ECE15279010/granater-fra-sovjettiden-regner-ned-over-bakhmut/"
+              href="https://jyllands-posten.dk/international/europa/ECE15279010/granater-fra-sovjettiden-regner-ned-over-bakhmut/"
             >
               <div class="grow">
                 <div class="pb-2 md:pb-1 text-xs">
@@ -94,20 +94,20 @@ export default component$(() => {
               </div>
               <img
                 class="w-40 pt-2"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15044995/t3o5s8/ALTERNATES/e-free/artilleri-donbas"
+                src="https://billeder.jyllands-posten.dk/pictures/image/15044995/t3o5s8/ALTERNATES/e-free/artilleri-donbas"
               />
             </a>
           </li>
 
           <div class="w-full block md:hidden">
-            <hr class="h-1 my-1 bg-gray-400 border-0" />
+            <hr class="h-1 my-1 bg-gray-400 border-0 mx-2" />
           </div>
 
           <li class="py-4 mx-4">
             {/* Article "id": 15273987 */}
             <a
               class="flex"
-              href="https://dev.jyllands-posten.dk/sport/fodbold/ECE15273987/lige-netop-dette-nederlag-gjorde-ekstra-ondt-for-kent-nielsen-og-co/"
+              href="https://jyllands-posten.dk/sport/fodbold/ECE15273987/lige-netop-dette-nederlag-gjorde-ekstra-ondt-for-kent-nielsen-og-co/"
             >
               <div class="grow">
                 <div class="pb-2 md:pb-1 text-xs">
@@ -125,20 +125,20 @@ export default component$(() => {
               </div>
               <img
                 class="w-40 pt-2"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15316063/js6a7z/ALTERNATES/e-free/superliga-broendby---silkeborg"
+                src="https://billeder.jyllands-posten.dk/pictures/image/15316063/js6a7z/ALTERNATES/e-free/superliga-broendby---silkeborg"
               />
             </a>
           </li>
 
           <div class="w-full block md:hidden">
-            <hr class="h-1 my-1 bg-gray-400 border-0" />
+            <hr class="h-1 my-1 bg-gray-400 border-0 mx-2" />
           </div>
 
           <li class="py-4 mx-4">
             {/* Article "id": 15316002 */}
             <a
               class="flex"
-              href="https://dev.jyllands-posten.dk/politik/ECE15316002/eksperter-jon-stephensens-paastaaede-forseelse-er-ikke-grov-nok-til-en-politianmeldelse/"
+              href="https://jyllands-posten.dk/politik/ECE15316002/eksperter-jon-stephensens-paastaaede-forseelse-er-ikke-grov-nok-til-en-politianmeldelse/"
             >
               <div class="grow">
                 <div class="pb-2 md:pb-1 text-xs">
@@ -156,14 +156,14 @@ export default component$(() => {
               </div>
               <img
                 class="w-40 pt-2"
-                src="https://dev.billeder.jyllands-posten.dk/pictures/image/15316021/mxx5t8/ALTERNATES/e-free/moderaternes-kulturordfoerer-jon-stephensen-moeder-pressen"
+                src="https://billeder.jyllands-posten.dk/pictures/image/15316021/mxx5t8/ALTERNATES/e-free/moderaternes-kulturordfoerer-jon-stephensen-moeder-pressen"
               />
             </a>
           </li>
 
-          <div class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400"></div>
+          <div class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400 mx-2"></div>
           <div class="w-full block md:hidden">
-            <hr class="h-1 my-1 bg-gray-400 border-0" />
+            <hr class="h-1 my-1 bg-gray-400 border-0 mx-2" />
           </div>
 
           <div class="px-4 items-center py-4 text-center md:text-right">
@@ -178,9 +178,8 @@ export default component$(() => {
       </main>
 
       <div class="w-full hidden md:block">
-        <hr class="h-0.5 my-8 bg-black border-2" />
+        <hr class="h-0.5 my-8 bg-black border-2 mx-2" />
       </div>
-
 
       {/* Emner du følger */}
       <section class="md:grid md:grid-cols-12 md:divide-x md:divide-gray-400 container mx-auto">
@@ -196,7 +195,7 @@ export default component$(() => {
           </div>
 
           {/* Mobile */}
-          <div class="font-serif text-2xl font-bold break-normal max-w-2xl px-4 md:px-6 pt-10 md:pt-1 block md:hidden">
+          <div class="font-serif text-2xl font-bold break-normal max-w-2xl px-4 md:px-6 pt-10 md:pt-1 sm:pb-3 block md:hidden">
             <p class="flex flex-wrap gap-x-2 items-center justify-center">
               Emner du følger
               <a href="/">
@@ -209,44 +208,48 @@ export default component$(() => {
         </div>
 
         <ul class="flex flex-col md:flex-col md:divide-y justify-end md:col-span-9">
-          <div class="w-full block md:hidden">
-            <hr class="h-0.5 my-4 bg-black border-0" />
-          </div>
-
           <ul class="flex flex-wrap flex-col sm:flex-row justify-center md:justify-start mx-2 md:mx-8">
             {tags.map((tag) => (
               <li
-                class="py-2 flex flex-row items-center justify-center flex-wrap px-1"
+                class="py-2 flex flex-row items-center justify-center flex-wrap"
                 key={tag.id}
               >
+                <div class="w-full block sm:hidden py-1 pb-5">
+                  <hr class="h-0.5 bg-gray-400" />
+                </div>
                 <a
-                  class="bg-transparent underline text-black py-3 px-2 rounded uppercase tracking-widest text-sm grow hover:font-semibold"
+                  class="bg-transparent underline text-black sm:py-2 px-4 rounded uppercase tracking-widest text-sm grow hover:font-semibold"
                   href={tag.id}
                 >
                   {tag.label}
                 </a>
+
                 <button
                   class="bg-secondary flex md:flex-row hover:bg-primary text-white hover:text-white 
-                text-xs py-2 md:py-1 px-3 border border-secondary hover:border-transparent rounded uppercase tracking-widest"
+                text-xs py-2 md:py-1 px-3 border border-secondary hover:border-transparent rounded uppercase tracking-widest no-underline"
                 >
                   Følger
                 </button>
               </li>
             ))}
           </ul>
-          <div class="px-4 py-6 text-center md:text-right">
-            <button
+          <div class="w-full block sm:hidden">
+            <hr class="h-0.5 my-4 bg-gray-400 mx-2" />
+          </div>
+          <div class="px-4 py-4 text-center md:text-right">
+            <a
               class="bg-transparent hover:bg-secondary text-secondary hover:text-white md:py-1.5 md:px-10 py-2.5 px-16 border 
             border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
+              href="/pages/tag_page"
             >
-              <a href="">Indlæs flere emner du følger</a>
-            </button>
+              Indlæs flere emner du følger
+            </a>
           </div>
         </ul>
       </section>
 
       <div class="w-full hidden md:block">
-        <hr class="h-0.5 my-8 bg-black border-2" />
+        <hr class="h-0.5 my-8 bg-black border-2 mx-2 sm:mx-0" />
       </div>
     </div>
   );

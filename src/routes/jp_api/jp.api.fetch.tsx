@@ -5,7 +5,7 @@ export type ContentService = {
 export function createContentService(): ContentService {
   async function fetchFrontPage(): Promise<FrontPageResponseDto> {
     const response = await fetch(
-      `https://jp-frontpage-api.dev.aws.jyllands-posten.dk/frontpage?anonId=0-0-0-0-0`
+      `https://jp-frontpage-api.test.aws.jyllands-posten.dk/frontpage?anonId=0-0-0-0-0`
     );
 
     if (!response.ok) {

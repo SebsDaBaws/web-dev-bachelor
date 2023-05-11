@@ -3,7 +3,7 @@ import { JPLogo } from "../icons/jp_logo";
 
 export default component$(() => {
   return (
-    <header>
+    <header class="sticky top-0 z-10 bg-white md:static">
       <div class="mx-auto flex max-w-screen-xl items-center md:py-8 md:px-5 px-2 md:pt-16 pt-4">
         
         <div class="basis-64 hidden md:block text-xs font-semibold tracking-wide">
