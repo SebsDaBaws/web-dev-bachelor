@@ -7,7 +7,7 @@
 6. Projekter starter op nu og i terminalen kommer der et link til localhost
 7. Tryk på linket og projektet åbner nu op i browseren!
 
-
+---
 
 
 # Qwik City App ⚡️
