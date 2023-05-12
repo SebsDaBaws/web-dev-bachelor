@@ -15,7 +15,7 @@ const tags = [
 export default component$(() => {
   return (
     <div>
-      <h1 class="justify-start uppercase flex px-6 font-semibold text-lg">
+      <h1 class="justify-start uppercase flex px-6 font-semibold text-lg 2xl:px-44">
         Emner du følger
       </h1>
       <div class="w-full invisible md:visible">
