@@ -1,3 +1,15 @@
+**Sådan køres projektet lokalt:**
+1. Download projektet som en .zip fil via. GitHub
+2. Udpak .zip filen og åbn projektet i VS Code
+3. Når projektet er åbnet op, åbn derefter en terminal
+4. Skriv npm install og vent på at projektet installeres
+5. Når installationen er færdig kan du derefter skrive npm run dev i terminalen 
+6. Projekter starter op nu og i terminalen kommer der et link til localhost
+7. Tryk på linket og projektet åbner nu op i browseren!
+
+
+
+
 # Qwik City App ⚡️
 
 - [Qwik Docs](https://qwik.builder.io/)
