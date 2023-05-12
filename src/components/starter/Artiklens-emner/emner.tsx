@@ -47,7 +47,7 @@ export default component$(() => {
 
                 <button
                   class="bg-white flex md:flex-row hover:bg-primary text-primary hover:text-white 
-        text-xs py-2 md:py-1 px-3 border border-secondary hover:border-transparent rounded uppercase tracking-widest no-underline"
+                text-xs py-2 md:py-1 px-3 border border-secondary hover:border-transparent rounded uppercase tracking-widest no-underline"
                 >
                   Følg
                 </button>
@@ -57,10 +57,10 @@ export default component$(() => {
           <div class="w-full block sm:hidden">
             <hr class="h-0.5 my-4 bg-gray-400 mx-2" />
           </div>
-          <div class="px-4 py-4 text-center md:text-right">
+          <div class="lg:px-10 py-4 text-center md:text-right">
             <a
               class="bg-transparent hover:bg-secondary text-secondary hover:text-white md:py-1.5 md:px-10 py-2.5 px-16 border 
-    border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
+            border-secondary hover:border-transparent rounded uppercase text-xs font-semibold"
               href="/pages/tag_page"
             >
               Se de emner du følger
