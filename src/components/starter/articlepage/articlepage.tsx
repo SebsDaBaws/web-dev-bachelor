@@ -99,14 +99,16 @@ export default component$(
               <p dangerouslySetInnerHTML={bodyText} />
             </div>
 
-            <div class="w-full">
+            <div class="w-full hidden sm:block">
               <hr class="h-0.5 my-4 bg-black border-2 mx-2 sm:mx-0" />
             </div>
+
+            <div class="w-full block sm:hidden">
+            <hr class="h-0.5 my-4 bg-gray-400 border-0 mx-2 sm:mx-0" />
+          </div>
           </section>
 
-          <div class="w-full hidden sm:block">
-            <hr class="h-0.5 my-4 bg-black border-0" />
-          </div>
+          
 
           <div>
             <Emner />

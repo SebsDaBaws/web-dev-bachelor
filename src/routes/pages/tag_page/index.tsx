@@ -50,7 +50,7 @@ export default component$(() => {
                   <time>15:47 |</time>
                   <nobr class="text-primary font-semibold uppercase">
                     {" "}
-                    Skole & uddannelse{" "}
+                    Forældreskab{" "}
                   </nobr>
                 </div>
 
