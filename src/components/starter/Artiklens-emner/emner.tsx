@@ -1,13 +1,13 @@
-import { component$, useSignal, useStylesScoped$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import { InfoButton } from "../icons/info_button";
 
 const tags = [
-  { label: "Forældreskab", id: "emneord.jp.dk,2017:foraeldreskab" },
-  { label: "Familieliv", id: "emneord.jp.dk,2017:familieliv" },
-  { label: "Efterskole", id: "emneord.jp.dk,2017:efterskole" },
+  { label: "Forældreskab", id: "https://jyllands-posten.dk/tags/emneord.jp.dk,2017:foraeldreskab" },
+  { label: "Familieliv", id: "https://jyllands-posten.dk/tags/emneord.jp.dk,2017:familieliv" },
+  { label: "Efterskole", id: "https://jyllands-posten.dk/tags/emneord.jp.dk,2017:efterskole" },
   {
     label: "Børneopdragelse",
-    id: "emneord.jp.dk,2017:boerneopdragelse",
+    id: "https://jyllands-posten.dk/tags/emneord.jp.dk,2017:boerneopdragelse",
   },
 ];
 

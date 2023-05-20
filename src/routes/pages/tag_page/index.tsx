@@ -3,12 +3,12 @@ import { type DocumentHead } from "@builder.io/qwik-city";
 import { InfoButton } from "~/components/starter/icons/info_button";
 
 const tags = [
-  { label: "Forældreskab", id: "emneord.jp.dk,2017:foraeldreskab" },
-  { label: "Familieliv", id: "emneord.jp.dk,2017:familieliv" },
-  { label: "Efterskole", id: "emneord.jp.dk,2017:efterskole" },
+  { label: "Forældreskab", id: "https://jyllands-posten.dk/tags/emneord.jp.dk,2017:foraeldreskab" },
+  { label: "Familieliv", id: "https://jyllands-posten.dk/tags/emneord.jp.dk,2017:familieliv" },
+  { label: "Efterskole", id: "https://jyllands-posten.dk/tags/emneord.jp.dk,2017:efterskole" },
   {
     label: "Børneopdragelse",
-    id: "emneord.jp.dk,2017:boerneopdragelse",
+    id: "https://jyllands-posten.dk/tags/emneord.jp.dk,2017:boerneopdragelse",
   },
 ];
 
@@ -188,7 +188,7 @@ export default component$(() => {
           <div class="font-serif text-2xl font-semibold break-normal max-w-2xl px-4 md:px-6 justify-start hidden md:block">
             <p class="flex flex-wrap gap-x-2 items-center">
               Du følger
-              <a href="/">
+              <a href="">
                 <InfoButton />
               </a>
             </p>
@@ -198,7 +198,7 @@ export default component$(() => {
           <div class="font-serif text-2xl font-bold break-normal max-w-2xl px-4 md:px-6 pt-10 md:pt-1 sm:pb-3 block md:hidden">
             <p class="flex flex-wrap gap-x-2 items-center justify-center">
               Emner du følger
-              <a href="/">
+              <a href="">
                 <InfoButton />
               </a>
             </p>
